@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>輝人淨化搜索詞活動</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="UTF-8">
+
+	<meta property="og:url"           content="http://www.moomoo-wonderland.com/wheein/smile.html" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="輝人淨化搜索詞活動" />
+	<meta property="og:description"   content="輝人淨化搜索詞活動" />
+	<meta property="og:image"         content="http://www.moomoo-wonderland.com/wheein/image.jpg" />
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+		  integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<style>
+		body {
+			font-family: Microsoft JhengHei !important;
+			font-weight: normal !important;
+		}
+
+		.scrollToTop {
+			position: fixed;
+			bottom: 15px;
+			right: 15px;
+		}
+
+		.footer {
+			margin-bottom: 100px;
+		}
+
+	</style>
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.10";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="container">
+
+	<div class="jumbotron" align="center">
+		<h1 class="display-5">
+			輝人淨化搜索詞活動
+			<div style="" class="fb-share-button" data-href="http://www.moomoo-wonderland.com/wheein/smile.html" data-layout="button" data-size="small" data-mobile-iframe="true">
+				<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.moomoo-wonderland.com%2Fwheein%2Fsmile.html&amp;src=sdkpreparse">分享</a>
+			</div>
+		</h1>
+		<div class="alert alert-danger" role="alert">
+			太頻繁搜尋沒有幫助，還請무무們手下留情orz
+		</div>
+		<div class="card">
+			<div class="card-header">
+				說明
+			</div>
+			<div class="card-body">
+				<p class="card-text">按下 Lego 後，會自動打開以下列關鍵字搜尋的 Naver 及 Daum 網頁</p>
+				<p class="card-text">目前關鍵字有："휘인 사복", "휘인 여친짤", "휘인 보조개", "휘인 노래"</p>
+				<p class="card-text">約 10 秒後會自動關掉剛剛打開的所有搜尋頁面</p>
+				<button class="btn btn-primary" type="button" id="lego">Lego</button>
+			</div>
+			<div class="alert alert-warning" role="alert">
+				如果按下Lego沒跳出新的視窗，可能是被你的瀏覽器設定擋下來囉 ^ ^
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 mb-3">
+			<form class="form-inline">
+				<div class="form-group col-sm-12 col-md-4 col-lg-4">
+					<label for="name" class="sr-only"></label>
+					<input type="text" readonly class="form-control-plaintext col-sm-3 col-md-5 col-lg-4" placeholder="我是...">
+					<input type="text" class="form-control col-sm-9 col-md-5 col-lg-4" id="name" placeholder="무무">
+				</div>
+				<div class="form-group col-sm-12 col-md-6 col-lg-6">
+					<input type="text" readonly class="form-control-plaintext col-sm-3" placeholder="我想說...">
+					<input type="text" class="form-control col-sm-9" id="cheerup" placeholder="I love u ~">
+				</div>
+				<div class="form-group col-sm-12 col-md-2 col-lg-2">
+					<button type="button" id="submit" class="btn btn-primary" onclick="formSubmit()">留言</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12" id="moomoo"></div>
+	</div>
+
+	<footer class="footer">
+		<div class="card mb-3">
+			<img class="card-img-top" src="wheein.jpg" alt="WheeIn">
+			<div class="card-body">
+				<p class="card-text"><small class="text-muted">Hi 무무</small></p>
+				<p class="card-text"><small class="text-muted">我只是在廣大蘿蔔田裡的一個小蘿蔔，職業是小蘿蔔資訊兵（敬禮）</small></p>
+				<p class="card-text"><small class="text-muted">出發點只是想為輝人以及喜愛輝人的蘿蔔們做些什麼</small></p>
+				<p class="card-text"><small class="text-muted">所以請大家輕鬆一點的逛逛這個網頁就好（Come on）</small></p>
+				<p class="card-text"><small class="text-muted">也希望大家能跟我一樣付出自己小小的力量讓 Mamamoo 成為更溫暖的坑（咦？）</small></p>
+				<p class="card-text"><small class="text-muted">- 蘿蔔資訊兵 K. 留</small></p>
+			</div>
+		</div>
+		<footer class="blockquote-footer float-right">最近一次維護時間 2017/09/14 10:37:21</footer>
+	</footer>
+
+</div>
+
+<button type="button" class="btn btn-xs btn-warning scrollToTop" onclick="back2top();">回頁首</button>
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-36798040-4', 'auto');
+	ga('send', 'pageview');
+
+	let generateNextWindow = function (new_url, query_string, callback) {
+		var new_window = window.open(new_url, query_string, 'height=500,width=400'); // [Notice] 如果視窗名稱取一樣會被後產生的視窗覆蓋掉
+		setTimeout(function () {
+			new_window.close();
+			callback();
+		}, 10000);
+	}
+
+	let goQuery = function () {
+
+		ga('send', 'event', 'Lego', 'click', 'Lego');
+
+		var kw = [ "휘인 사복", "휘인 여친짤", "휘인 보조개", "휘인 노래" ];
+		//var kw = ["휘인 사복"];
+
+		for (var i = 0; i < kw.length; i++) {
+			var query_string = kw[i];
+			query_string = query_string.replace(" ", "+");
+			generateNextWindow('https://search.naver.com/search.naver?query=' + query_string, "[Naver]"+query_string, function () {
+				console.log("[NAVER] End "+query_string);
+			});
+
+			generateNextWindow('http://search.daum.net/search?w=tot&q=' + query_string, "[Daum]"+query_string, function () {
+				console.log("[DAUM] End "+query_string);
+			});
+		}
+	}
+	document.querySelector("#lego").addEventListener("click", goQuery);
+
+
+	$.ajax({
+		url: "comment.php",
+		data: {
+			action: "init"
+		},
+		type: "POST",
+		dataType: "json",
+		success: function(response) {
+			//console.warn(response);
+			//$("#moomoo").prepend(response);
+
+			if (response.success) {
+				getData(response.data);
+			} else {
+				//alert(response.msg);
+			}
+		}
+
+	})
+
+
+	function getData(data) {
+		var html = "";
+		//var results = JSON.parse(data);
+		$.each(data, function(index, d) {
+			html += '<div class="card border-warning mb-3">';
+			html += '<div class="card-header">'+d.name+'</div>';
+			html += '<div class="card-body text-warning">';
+			//html += '<h4 class="card-title">'+d.content+'</h4>';
+			html += '<h4 class="card-title">'+d.content +'</h4>';
+			//html += '<p class="card-text">'+d.time+'</p>';
+			html += '</div>';
+			html += '</div>';
+		});
+
+		$("#moomoo").html(html);
+	}
+
+	function formSubmit() {
+
+		let name = document.querySelector("#name").value;
+		let cheerup = document.querySelector("#cheerup").value;
+
+		$.ajax({
+			url: "comment.php",
+			data: {
+				name: name,
+				cheerup: cheerup,
+				action: 'insert'
+			},
+			type: "POST",
+			dataType: "json",
+			success: function(response) {
+				//$("#moomoo").prepend(response);
+
+				$("#name").val("");
+				$("#cheerup").val("");
+				if (response.success) {
+					getData(response.data);
+					//$("html, body").animate({ scrollTop: $(document).height() }, 1000);
+					swal("留言成功！").then((value) => {
+						$('html,body').animate({scrollTop: $("#moomoo .card:first").offset().top - 100});
+					});
+
+				} else {
+					swal(response.msg, "", "warning").then((value) => {
+						$('html,body').animate({scrollTop: $("#cheerup").offset().top - 100});
+				});
+				}
+			},
+			error: function(xhr, ajaxOptions, thrownError) {
+				console.log(xhr.responseText);
+			}
+		});
+	}
+
+	function back2top() {
+		$('html,body').animate({scrollTop: 0});
+	}
+
+
+</script>
+
