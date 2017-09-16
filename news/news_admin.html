@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>文章發佈</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="UTF-8">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+		  integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+	<!-- include libraries(jQuery, bootstrap) -->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+
+	<!-- include summernote css/js-->
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.7/summernote.css" rel="stylesheet">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.7/summernote.js"></script>
+
+</head>
+<body>
+
+
+<div class="container">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand">新聞編輯頁</a>
+				<button type="button" id="save" class="btn btn-success navbar-btn" onclick="save()">存檔</button>
+				<button type="button" class="btn btn-default navbar-btn">取消</button>
+			</div>
+
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<div class="row">
+		<div class="col-sm-12">
+			<form method="post" enctype="multipart/form-data">
+				<div class="form-group">
+					<label for="title">新聞標題</label>
+					<input type="title" class="form-control" id="title">
+				</div>
+				<div id="summernote"></div>
+			</form>
+		</div>
+
+	</div>
+</div>
+
+<!--<button type="button" class="btn btn-xs btn-warning scrollToTop" onclick="back2top();">回頁首</button>-->
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+	$('#summernote').summernote({
+		height: 500,                 // set editor height
+		minHeight: null,             // set minimum height of editor
+		maxHeight: null,             // set maximum height of editor
+		focus: true                 // set focus to editable area after initializing summernote
+
+		/*
+		callbacks: {
+			onImageUpload: function(image) {
+				console.log(image);
+				uploadImage(image[0]);
+			}
+		}
+		*/
+
+//		toolbar: [
+//			// [groupName, [list of button]]
+//			['style', ['bold', 'italic', 'underline', 'clear']],
+//			['font', ['strikethrough', 'superscript', 'subscript']],
+//			['fontsize', ['fontsize']],
+//			['color', ['color']],
+//			['para', ['ul', 'ol', 'paragraph']],
+//			['height', ['height']]
+//		]
+	});
+
+});
+
+function uploadImage(image) {
+
+	console.log(image);
+	console.log("==============");
+
+	var data = new FormData();
+	data.append("image", image);
+	$.ajax({
+		url: 'image_upload.php',
+		cache: false,
+		contentType: false,
+		processData: false,
+		data: data,
+		type: "post",
+		success: function(url) {
+			console.warn(url);
+			var image = $('<img>').attr('src', 'http://' + url);
+			$('#summernote').summernote("insertNode", image[0]);
+		},
+		error: function(data) {
+			console.log(data);
+		}
+	});
+}
+
+function save () {
+	var markup = $('#summernote').summernote('code');
+
+	$.ajax({
+		url: "news_admin.php",
+		data: {
+			markup: markup
+		},
+		type: "POST",
+		dataType: "html",
+		success: function(response) {
+			$("body").append(response);
+			//location.href = "../news_list.html";
+		},
+		error: function(xhr, ajaxOptions, thrownError) {
+			console.log(xhr.responseText);
+		}
+	});
+};
+
+function back2top() {
+	$('html,body').animate({scrollTop: 0});
+}
+
+
+</script>
+
