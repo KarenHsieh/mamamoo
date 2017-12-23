@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>歌曲應援</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://use.typekit.net/yct6khw.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+	<title>Mamamoo 應援歌詞</title>
+	<meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="robots" content="index"> 
+    <!-- 搜索引擎爬虫重访时间 -->
+    <!-- <meta name="revisit-after" content="7 days"> -->
+	<meta http-equiv="cache-control" content="no-cache">
+	
 	<meta charset="UTF-8">
-
-	<meta property="og:url"           content="http://www.moomoo-wonderland.com/wheein/smile.html" />
+	
+	<meta property="og:url"           content="http://www.moomoo-wonderland.com/support/songs.html" />
 	<meta property="og:type"          content="website" />
-	<meta property="og:title"         content="歌曲應援" />
-	<meta property="og:description"   content="歌曲應援" />
-	<meta property="og:image"         content="http://www.moomoo-wonderland.com/wheein/image.jpg" />
+	<meta property="og:title"         content="MAMAMOO應援歌詞" />
+	<meta property="og:description"   content="木木永遠陪著屋哩媽木一起走花路下去！" />
+	<meta property="og:image"         content="http://www.moomoo-wonderland.com/support_cover.jpg"/>
+	<meta name="keywords" 			  content="Mamamoo, 媽木, 마마무, 응원, 應援, 歌詞, 무무, 蘿蔔, 1cm的自尊心, 大叔GAG, Mr.曖昧模糊, YES I AM, Um Oh Ah Yeh, Décalcomanie, You are the best">
 
-	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-
-	<script src="https://use.typekit.net/amz2sbp.js"></script>
-	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 	<style>
 		body {
@@ -30,10 +36,16 @@
 			font-weight: normal;
 		}
 
-		.card-body {
+		.korea-font-regular {
 			font-family: source-han-sans-korean;
 			font-style: normal;
 			font-weight: 400;
+		}
+
+		.korea-font-bold {
+			font-family: source-han-sans-korean;
+			font-style: normal;
+			font-weight: 700;
 		}
 
 		.scrollToTop {
@@ -42,62 +54,77 @@
 			right: 15px;
 		}
 
-
+		.fb-share-button {
+			vertical-align: bottom;
+		}
 	</style>
 </head>
 <body>
-	<!-- 歌詞來源 http://www.bugs.co.kr/ -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.10";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 	<nav class="navbar navbar-expand-lg navbar-light bg-warning">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<a class="navbar-brand" href="#">MooMoo Wonderland</a>
+		<a class="navbar-brand" href="../index.html">MooMoo Wonderland</a>
 
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 				<li class="nav-item active">
-					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="songs.html">媽木應援歌詞<span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Link</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link disabled" href="#">Disabled</a>
+					<a class="nav-link" href="../wheein/smile.html">輝人淨化搜索詞活動</a>
 				</li>
 			</ul>
-			<form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-			</form>
+			<!--<form class="form-inline my-2 my-lg-0">-->
+				<!--<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
+				<!--<button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>-->
+			<!--</form>-->
 		</div>
 	</nav>
 
-	<div class="container">
-		<div id="accordion" role="tablist">
+	<div class="container-fluid">
+		<div class="col-sm-12 text-right mt-3">
+			<button type="button" class="btn btn-outline-success btn-sm float-left" id="convert-ch-btn">切換中文空耳應援</button>
+			<button type="button" class="btn btn-outline-success btn-sm float-left" id="convert-korea-btn">切換韓文應援</button>
+			<div class="fb-share-button" data-href="http://www.moomoo-wonderland.com/support/songs.html" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.moomoo-wonderland.com%2Fsupport%2Fsongs.html&amp;src=sdkpreparse">分享</a></div>
+		</div>
+
+		<div id="accordion" role="tablist" class="mt-3">
 			<div class="card">
-				<div class="card-header" role="tab" id="headingOne">
+				<div class="card-header song_title" role="tab" id="headingOne">
 					<h5 class="mb-0">
-						<a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-							1CM的自尊心
+						<a class="collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+							<input type="hidden" value="https://www.youtube.com/embed/wxnQsLVEWNo?rel=0">
+							<span class="korea-font-regular">1cm의 자존심</span>
 						</a>
+						1cm的自尊心
 					</h5>
 				</div>
 
-				<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+				<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
 					<div class="card-body">
 						<div class="col-sm-6 embed-responsive embed-responsive-16by9">
-							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wxnQsLVEWNo" allowfullscreen></iframe>
+							<iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
 						</div>
-						<p class="text-left">
-							여기 나보다 큰 사람 있어?
+						<p class="text-left korea-font-regular">
+							<br>여기 나보다 큰 사람 있어?
 							<br>없으면 됐어
 							<br>
-							<br>마마무 마마무 마마무 <span class="text-danger font-weight-bold">(Solar)</span>
+							<br>마마무 마마무 마마무 <span class="text-danger korea-font-bold support">(Solar)</span>
 							<br>너 보단 내가 더 커
-							<br>넌 160 난 1 <span class="text-danger font-weight-bold">(난 1)</span>
-							<br>마마무 마마무 마마무 <span class="text-danger font-weight-bold">(MoonByul)</span>
+							<br>넌 160 <span class="text-danger korea-font-bold support">난 1</span>
+							<br>마마무 마마무 마마무 <span class="text-danger korea-font-bold support">(MoonByul)</span>
 							<br>우리 끼리끼리끼리
-							<br>딱 1cm 차이 <span class="text-danger font-weight-bold">(차이)</span>
+							<br>딱 1cm <span class="text-danger korea-font-bold support" data-translate="洽異" data-origin="차이">차이</span>
 							<br>
 							<br>뭔 헛소리
 							<br>일단 휘인인 먼 나라 얘기
@@ -105,12 +132,12 @@
 							<br>키 앞에선 장사 없지 Small 휘인
 							<br>어줍자니 일센치 가지고
 							<br>언니들 이러기?
-							<br>우리 쿨하게 좀 가자 나만 힐 신기 <span class="text-danger font-weight-bold">(나만 힐 신기)</span>
+							<br>우리 쿨하게 좀 가자 <span class="text-danger korea-font-bold support" data-translate="拿慢 黑 新ㄍ一" data-origin="나만 힐 신기">나만 힐 신기</span>
 							<br>
 							<br>너와 나의 차이 1cm
-							<br>(언닌 두상이 좀 커) <span class="text-danger font-weight-bold">(언닌 두상이 좀 커)</span>
+							<br><span class="text-danger korea-font-bold support" data-translate="歐尼 都桑一囧勾" data-origin="언닌 두상이 좀 커">언닌 두상이 좀 커</span>
 							<br>그냥 받아들여 난쟁이
-							<br>(그냥 받아들여) <span class="text-danger font-weight-bold">(그냥 받아들여)</span>
+							<br><span class="text-danger korea-font-bold support" data-translate="科亮 趴大嘟有" data-origin="그냥 받아들여">그냥 받아들여</span>
 							<br>달라질 건 없어 인생 (뭐라카노)
 							<br>Do you know? What I'm saying
 							<br>
@@ -123,103 +150,1005 @@
 							<br>많이 탁하지?
 							<br>난 거기 못 가 입장불가
 							<br>
-							<br>고만고만해 <span class="text-danger font-weight-bold">(고만고만해)</span> 그만그만해 <span class="text-danger font-weight-bold">(그만그만해)</span>
-							<br>이럴 시간 있음 다른 거나 고민해
+							<br><span class="text-danger korea-font-bold support" data-translate="勾曼勾曼黑 可慢可慢黑" data-origin="고만고만해 그만그만해">고만고만해 그만그만해</span>
+							<br>이럴 시간 있음 다른 거나 <span class="text-danger korea-font-bold support" data-translate="勾敏黑" data-origin="고민해">고민해</span>
 							<br>
 							<br>Oh 우리 휘인이 손이 안 닿니?
 							<br>내가 꺼내줄게
-							<br>언니가 이 구역에 장신
-							<br>마마무 마마무 마마무
+							<br>언니가 이 구역에 <span class="text-danger korea-font-bold support" data-translate="江心" data-origin="장신">장신</span>
+							<br>마마무 마마무 마마무 <span class="text-danger korea-font-bold support">(WheeIn)</span>
 							<br>너 보단 내가 더 커
-							<br>넌 160 난 1
-							<br>마마무 마마무 마마무
+							<br>넌 160 <span class="text-danger korea-font-bold support">난 1</span>
+							<br>마마무 마마무 마마무 <span class="text-danger korea-font-bold support">(Whasa)</span>
 							<br>우리 끼리끼리끼리
-							<br>딱 1cm 차이
+							<br>딱 1cm <span class="text-danger korea-font-bold support" data-translate="洽異" data-origin="차이">차이</span>
 							<br>
-							<br>A-YO 반올림해도 작아요 나보다 더
+							<br>A-YO 반올림해도 작아요 나보다
 							<br>깔창을 깔아봐요 소용없나요
 							<br>힐을 신어도 티가 나고
 							<br>운동화를 신어도 티가 나
-							<br>키 순서가 도레미파
+							<br>키 순서가 <span class="text-danger korea-font-bold support" data-translate="Do Re Mi Fa" data-origin="도레미파">도레미파</span>
 							<br>
-							<br>너와 나의 차이 1cm (1.8)
+							<br>너와 나의 차이 1cm <span class="text-danger korea-font-bold support" data-translate="(ㄧ囧趴)" data-origin="(1.8)">(1.8)</span>
 							<br>누가 봐도 이건 Same Same
 							<br>(둘 다 두상이 좀 커)
 							<br>여긴 우물 안의 전쟁
 							<br>You know? What I’m talking about?
 							<br>
-							<br>거기 문스타 아주 그냥 물 만나셨어
+							<br>거기 문스타 아주 그냥 <span class="text-danger korea-font-bold support" data-translate="木滿那修搜" data-origin="물 만나셨어">물 만나셨어</span>
 							<br>어허 인정해 여유 넘치는 게
-							<br>장신인척 난리 우월한 척 난리
-							<br>최홍만 인 척 난리 그래 봤자 도토리
+							<br>장신인척 <span class="text-danger korea-font-bold support">난리</span> 우월한 척 <span class="text-danger korea-font-bold support">난리</span>
+							<br>최홍만 인 척 <span class="text-danger korea-font-bold support">난리</span> 그래 봤자 도토리
 							<br>
-							<br>맷돌손잡이가 빠졌어
-							<br>맷돌손잡이가 빠졌어
+							<br><span class="text-danger korea-font-bold support" data-translate="妹都孫加比嘎 八九搜" data-origin="맷돌손잡이가 빠졌어">맷돌손잡이가 빠졌어</span>
+							<br><span class="text-danger korea-font-bold support" data-translate="妹都孫加比嘎 八九搜" data-origin="맷돌손잡이가 빠졌어">맷돌손잡이가 빠졌어</span>
 							<br>지나가는 조태오가 웃어
 							<br>지금 내 기분이 그래 어이가 없네
 							<br>
 							<br>마마무 마마무 마마무
 							<br>너 보단 내가 더 커
-							<br>넌 160 난 1
+							<br>넌 160 <span class="text-danger korea-font-bold support">난 1</span>
 							<br>마마무 마마무 마마무
 							<br>우리 끼리끼리끼리
-							<br>딱 1cm 차이
+							<br>딱 1cm <span class="text-danger korea-font-bold support" data-translate="洽異" data-origin="차이">차이</span>
 							<br>
 							<br>여기 나보다 큰사람 있어?
 							<br>너 보단 내가 더 커
-							<br>너 보단 너 보단 내가 더 커
+							<br>너 보단 너 보단 내가 더 커 <span class="text-danger korea-font-bold support" data-translate="(扣)" data-origin="(커)">(커)</span>
 							<br>너 보단 내가 더 커
-							<br>너 보단 너 보단 내가 더 커
+							<br>너 보단 너 보단 내가 더 커 <span class="text-danger korea-font-bold support" data-translate="(扣)" data-origin="(커)">(커)</span>
 							<br>너 보단 내가 더 커
-							<br>너 보단 너 보단 내가 더 커
+							<br>너 보단 너 보단 내가 더 커 <span class="text-danger korea-font-bold support" data-translate="(扣)" data-origin="(커)">(커)</span>
 							<br>너 보단 내가 더 커
 							<br>너 보단 너 보단 너 보단 내가 더 커
 							<br>
 							<br>잘 들어 난쟁이들아
 							<br>내가 이 바닥에서
 							<br>
+							<br>너 보단 내가 더 커 <span class="text-danger korea-font-bold support">(Hey)</span>
+							<br>너 보단 내가 더 커 <span class="text-danger korea-font-bold support">(Hey)</span>
+							<br>너 보단 내가 더 커 <span class="text-danger korea-font-bold support">(Hey)</span>
+							<br>너 보단 내가 더 커 <span class="text-danger korea-font-bold support" data-translate="(ㄨ喔～～～)" data-origin="(워 ~~)">(워 ~~)</span>
 							<br>너 보단 내가 더 커
-							<br>너 보단 너 보단 내가 더 커
 							<br>너 보단 내가 더 커
-							<br>너 보단 너 보단 내가 더 커
-							<br>너 보단 내가 더 커
-							<br>너 보단 너 보단 내가 더 커
 							<br>너 보단 내가 더 커
 							<br>너 보단 너 보단 너 보단 내가 더 커
 						</p>
+						<div class="card mb-3">
+							<div class="card-body">
+								<p class="card-text"><small class="text-muted">Lyric fr. http://www.bugs.co.kr/</small></p>
+								<p class="card-text"><small class="text-muted">Video fr. Taiwan MooMoo Union MAMAMOO</small></p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="card">
-				<div class="card-header" role="tab" id="headingTwo">
+				<div class="card-header song_title" role="tab" id="headingTwo">
 					<h5 class="mb-0">
 						<a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-							Collapsible Group Item #2
+							<input type="hidden" value="https://www.youtube.com/embed/1YGT9MSF6tw?rel=0">
+							<span class="korea-font-regular">아재개그</span>
 						</a>
+						大叔GAG
 					</h5>
 				</div>
 				<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
 					<div class="card-body">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						<div class="col-sm-6 embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
+						</div>
+						<p class="text-left korea-font-regular">
+							<br><span class="text-danger korea-font-bold support">(Mamamoo)</span>
+							<br>어떡해 오늘 나 또 지각이야
+							<br>아 미치겠네 미치지 말고 솔을 쳐봐 <span class="text-danger korea-font-bold support">(Sol)</span>
+							<br>뭔 소리야 이게 웃긴 얘기야
+							<br>참 어이없게 집 갈 때 생각나 <span class="text-danger korea-font-bold support">(WheeIn)</span>
+							<br>
+							<br>바나나 먹으면 <span class="text-danger korea-font-bold support" data-translate="那黑特 怕那那" data-origin="나한테 반하나">나한테 반하나</span>
+							<br>지금 너 불만 있냐 아니 물도 있어
+							<br>너 어디야 지금 제주도야
+							<br>내 맘을 흔든 너 재주도 좋아
+							<br>
+							<br>Yo! A.Z.E!
+							<br>아재의 꿈은 <span class="text-danger korea-font-bold support" data-translate="摳打累" data-origin="커다래" >커다래</span>
+							<br>너의 센스 존중해 <span class="text-danger korea-font-bold support">Respect</span>
+							<br>아주 어마 무시 무시 무시무시해
+							<br>천방지축 어린 아이 같아 <span class="text-danger korea-font-bold support" data-translate="Woo" data-origin="후!">후!</span>
+							<br>I think 말장난 신선한 발상
+							<br>척척박사 아무도 못 말려
+							<br>크게 웃어 줘요 활짝
+							<br>
+							<br>아재개그 <span class="text-danger korea-font-bold support">(아재개그)</span> 아저씨군 <span class="text-danger korea-font-bold support">(아저씨군)</span>
+							<br>삐뚤빼뚤 <span class="text-danger korea-font-bold support">(삐뚤빼뚤)</span> 지그재그 <span class="text-danger korea-font-bold support">(지그재그)</span>
+							<br>쟤쟤쟤 쟤 봐라 엄머머 쟤 좀 봐라
+							<br>아 아저씨 아저씨 아저씨군 <span class="text-danger korea-font-bold support" data-translate="(汗蹦豆)" data-origin="(한번더)">(한번더)</span>
+							<br>
+							<br>아재개그 아저씨군
+							<br>삐뚤빼뚤 다같이 Stop
+							<br>왼손은 허리위로 오른손은 머리위로
+							<br>잘생긴 부처님 다같이 <span class="text-danger korea-font-bold support" data-translate="Put your hand up" data-origin="부처핸섬">부처핸섬</span> 화사
+							<br>
+							<br>오 아재 소금이 죽었소 맞춰봐
+							<br>소금이 죽으면 죽염이 되오 <span class="text-danger korea-font-bold support">죽염</span>
+							<br>엊그제 어떤 아재한테
+							<br>이 가사 쓰려고 몇 개 좀 배워왔소 <span class="text-danger korea-font-bold support">(나도 알려줘)</span> Let’s Go
+							<br>
+							<br>결혼한 복숭아는 <span class="text-danger korea-font-bold support">웨딩 피치</span>
+							<br>만인의 파이는 <span class="text-danger korea-font-bold support">와이파이</span>
+							<br>소시는 옷 가게에서 <span class="text-danger korea-font-bold support">티파니</span>
+							<br>소가 위로 올라간다 <span class="text-danger korea-font-bold support">소오오름</span>
+							<br>너무해 너무해 그래 너는 무해
+							<br>잘못 봤다간 멘탈 다 나갈 수 있어
+							<br>
+							<br>아재개그 <span class="text-danger korea-font-bold support">(아재개그)</span> 아저씨군 <span class="text-danger korea-font-bold support">(아저씨군)</span>
+							<br>삐뚤빼뚤 <span class="text-danger korea-font-bold support">(삐뚤빼뚤)</span> 지그재그 <span class="text-danger korea-font-bold support">(지그재그)</span>
+							<br>쟤쟤쟤 쟤 봐라 엄머머 쟤 좀 봐라
+							<br>아 아저씨 아저씨 아저씨군 <span class="text-danger korea-font-bold support" data-translate="(汗蹦豆)" data-origin="(한번더)">(한번더)</span>
+							<br>
+							<br>아재개그 아저씨군
+							<br>삐뚤빼뚤 다같이 Stop
+							<!--<br>삐뚤빼뚤 다같이 얼음! 땡-->
+							<br>왼손은 허리위로 오른손은 머리위로
+							<br>잘생긴 부처님 다같이 <span class="text-danger korea-font-bold support" data-translate="Put your hand up" data-origin="부처핸섬">부처핸섬</span> 뛰어!
+							<br><span class="text-danger korea-font-bold support" data-translate="(堆歐 金容仙)" data-origin="(뛰어 김용선)">(뛰어 김용선)</span>
+							<br><span class="text-danger korea-font-bold support" data-translate="(堆歐 文星伊)" data-origin="(뛰어 문별이)">(뛰어 문별이)</span>
+							<br><span class="text-danger korea-font-bold support" data-translate="(堆歐 丁輝人)" data-origin="(뛰어 정휘인)">(뛰어 정휘인)</span>
+							<br><span class="text-danger korea-font-bold support" data-translate="(堆歐 安惠真)" data-origin="(뛰어 안혜진)">(뛰어 안혜진)</span>
+							<br>
+							<br>아재개그 Oh 지끈지끈
+							<br>
+							<br>아재개그 <span class="text-danger korea-font-bold support">(아재개그)</span> 아저씨군 <span class="text-danger korea-font-bold support">(아저씨군)</span>
+							<br>삐뚤빼뚤 <span class="text-danger korea-font-bold support">(삐뚤빼뚤)</span> 지그재그 <span class="text-danger korea-font-bold support">(지그재그)</span>
+							<br>쟤쟤쟤 쟤 봐라 엄머머 쟤 좀 봐라
+							<br>아 아저씨 아저씨 아저씨군 <span class="text-danger korea-font-bold support" data-translate="(汗蹦豆)" data-origin="(한번더)">(한번더)</span>
+							<br>
+							<br>아재개그 아저씨군
+							<br>삐뚤빼뚤 열중 쉬어!
+							<br>왼손은 허리위로 오른손은 머리위로
+							<br>잘생긴 부처님 다같이 <span class="text-danger korea-font-bold support" data-translate="Put your hand up" data-origin="부처핸섬">부처핸섬</span> 뛰어!
+							<br><span class="text-danger korea-font-bold support" data-translate="(堆歐 金容仙)" data-origin="(뛰어 김용선)">(뛰어 김용선)</span>
+							<br><span class="text-danger korea-font-bold support" data-translate="(堆歐 文星伊)" data-origin="(뛰어 문별이)">(뛰어 문별이)</span>
+							<br><span class="text-danger korea-font-bold support" data-translate="(堆歐 丁輝人)" data-origin="(뛰어 정휘인)">(뛰어 정휘인)</span>
+							<br><span class="text-danger korea-font-bold support" data-translate="(堆歐 安惠真)" data-origin="(뛰어 안혜진)">(뛰어 안혜진)</span>
+							<br>
+							<br>아재개그 Oh 지끈지끈
+							<br>AZE 쉿
+						</p>
+						<div class="card mb-3">
+							<div class="card-body">
+								<p class="card-text"><small class="text-muted">Lyric fr. http://www.bugs.co.kr/</small></p>
+								<p class="card-text"><small class="text-muted">Video fr. Taiwan MooMoo Union MAMAMOO</small></p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="card">
-				<div class="card-header" role="tab" id="headingThree">
+				<div class="card-header song_title" role="tab" id="headingThree">
 					<h5 class="mb-0">
 						<a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-							Collapsible Group Item #3
+							<input type="hidden" value="https://www.youtube.com/embed/VmTMfQ07GYc?rel=0">
+							나로 말할 것 같으면
 						</a>
+						YES I AM
 					</h5>
 				</div>
 				<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
 					<div class="card-body">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						<div class="col-sm-6 embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
+						</div>
+						<p class="text-left korea-font-regular">
+							<br><span class="text-danger korea-font-bold support" data-translate="(屋能哩 租飲公)" data-origin="(오늘의주인공)">(오늘의주인공)</span>
+							<br>나로 말할 것
+							<br>같으면 자신감 있는 여자 <span class="text-danger korea-font-bold support">(Mamamoo)</span>
+							<br>말하자면 느낌 있는 여자 <span class="text-danger korea-font-bold support">(My Baby)</span>
+							<br>자신 있으면 나를 따라 해도 돼
+							<br>뒤따라와 뒤따라와 Follow <span class="text-danger korea-font-bold support">me E Ae Ae</span>
+							<br>
+							<br>화장은 옅게 귀찮으니까 <span class="text-danger korea-font-bold support" data-translate="(ㄋㄡ 耶波)" data-origin="(넘 에뻐)">(넘 에뻐)</span>
+							<br>노출은 안 해 그럴 필요 없어
+							<br>이상해 좀 특이해 평범한 게 더 싫어
+							<br>이런 내 모습 부모님께 감사해
+							<br><span class="text-danger korea-font-bold support">Me Me 4 with Sun</span>
+							<br>
+							<br>생각 말어 정신은 High Class
+							<br>눈치 보지마 네가 바로 Vogue
+							<br><span class="text-danger korea-font-bold support" data-translate="哈囉 蹦啾 你好 安妞" data-origin="Hello Bonjour NiHao 안녕" >Hello Bonjour NiHao 안녕</span>
+							<br>세계각국마다 매력이 있듯이
+							<br><span class="text-danger korea-font-bold support" data-translate="那嘍 媽累夠 嘎特謬" data-origin="나로 말할 것 같으면" >나로 말할 것 같으면</span>
+							<br>겨울에 민소매 입으면 여름이 되는 거야 I love Ya
+							<br>(Introduce My Self)
+							<br>나로 말할 것
+							<br>
+							<br>같으면 자신감 있는 여자 <span class="text-danger korea-font-bold support">(Mamamoo)</span>
+							<br>말하자면 느낌 있는 여자 <span class="text-danger korea-font-bold support">(My Baby)</span>
+							<br>자신 있으면 나를 따라 해도 돼
+							<br>뒤따라와 뒤따라와 Follow <span class="text-danger korea-font-bold support">me E Ae Ae</span>
+							<br>
+							<br><span class="text-danger korea-font-bold support">Yes I am</span> 나로 말할 것 같으면
+							<br><span class="text-danger korea-font-bold support">Yes I am</span> 아주 건방져
+							<br>
+							<br>편한 게 좋아 그게 나니까 <span class="text-danger korea-font-bold support">(나니까)</span>
+							<br>돌려 말 안 해 숨기지 못해
+							<br>건방져 신경 안 써 나를 모르는 소리
+							<br>그냥 내 멋대로 내 식대로 해
+							<br>
+							<br>My name is <span class="text-danger korea-font-bold support" data-translate="MoonStar" data-origin="문스타">문스타</span>
+							<br>어디까지나 그냥 내 취향이니까 <span class="text-danger korea-font-bold support" data-translate="耶敏哈緊罵" data-origin="예민하지마">예민하지마</span>
+							<br>컴플렉스 Nothing 슬렉스 셔츠 로퍼
+							<br>클래식한 스타일로 난 나를 표현해 <span class="text-danger korea-font-bold support">My Baby</span>
+							<br>아직까지 말꼬리 잡는 너 Take off the blind
+							<br>Drive 내 차에 타
+							<br>자 자 나로 말할 것
+							<br>
+							<br>같으면 자신감 있는 여자 <span class="text-danger korea-font-bold support">(Mamamoo)</span>
+							<br>말하자면 느낌 있는 여자 <span class="text-danger korea-font-bold support">(My Baby)</span>
+							<br>자신 있으면 나를 따라 해도 돼 (해도 돼)
+							<br>뒤따라와 뒤따라와 Follow <span class="text-danger korea-font-bold support">me E Ae Ae</span>
+							<br>
+							<br><span class="text-danger korea-font-bold support">Yes I am</span> 나로 말할 것 같으면
+							<br><span class="text-danger korea-font-bold support">Yes I am</span> Follow <span class="text-danger korea-font-bold support">me E Ae Ae</span>
+							<br><span class="text-danger korea-font-bold support">Yes I am</span> 나로 말할 것 같으면
+							<br><span class="text-danger korea-font-bold support">Yes I am</span> 볼이 뚠뚠해
+							<br>
+							<br>V라인보다 동그란 내 얼굴이 좋아
+							<br>나만의 Some special thing
+							<br>쌍꺼풀 있는 눈매 보단 나는 내 눈 무쌍이 좋아
+							<br>웃을 땐 인디언 보조개와 코 찡긋
+							<br><span class="text-danger korea-font-bold support" data-translate="阿啾 親洽黑" data-origin="아주 칭찬해">아주 칭찬해</span>
+							<br>
+							<br>나로 말할 것 같으면 <span class="text-danger korea-font-bold support" data-translate="(金容仙)" data-origin="(김용선)">(김용선)</span>
+							<br>말할 것 같으면 <span class="text-danger korea-font-bold support" data-translate="(文星伊)" data-origin="(문별이)">(문별이)</span>
+							<br>아주 시크해
+							<br>나로 말할 것 같으면 <span class="text-danger korea-font-bold support" data-translate="(丁輝人)" data-origin="(정휘인)">(정휘인)</span>
+							<br>말할 것 같으면 <span class="text-danger korea-font-bold support" data-translate="(安惠真)" data-origin="(안혜진)">(안혜진)</span>
+							<br>쟤 쟤 쟤 (Introduce My Self)
+							<br>
+							<br>나로 말할 것
+							<br>같으면 자신감 있는 여자
+							<br>말하자면 느낌 있는 여자
+							<br>자신 있으면 나를 따라 해도 돼
+							<br>뒤따라와 뒤따라와 Follow <span class="text-danger korea-font-bold support">me E Ae Ae</span>
+							<br><span class="text-danger korea-font-bold support">Yes I am</span> 나로 말할 것 같으면
+							<br><span class="text-danger korea-font-bold support">Yes I am</span> Follow me E Ae Ae
+							<br>
+							<br><span class="text-danger korea-font-bold support">Yes I am</span> 나로 말할 것 같으면
+							<br><span class="text-danger korea-font-bold support">Yes I am</span>
+							<br>아주 건방져
+						</p>
+						<div class="card mb-3">
+							<div class="card-body">
+								<p class="card-text"><small class="text-muted">Lyric fr. http://www.bugs.co.kr/</small></p>
+								<p class="card-text"><small class="text-muted">Video fr. Taiwan MooMoo Union MAMAMOO</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header song_title" role="tab" id="headingFour">
+					<h5 class="mb-0">
+						<a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+							<input type="hidden" value="https://www.youtube.com/embed/5jN63hEQi5s?rel=0">
+							Mr.애매모호
+						</a>
+						Mr. 曖昧模糊
+					</h5>
+				</div>
+				<div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion">
+					<div class="card-body">
+						<div class="col-sm-6 embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
+						</div>
+						<p class="text-left korea-font-regular">
+							<br><span class="text-danger korea-font-bold support">(WheeIn Hwasa MoonByul Solar)</span>
+							<br>MAMA MAMAMOO <span class="text-danger korea-font-bold support">(Mamamoo)</span>
+							<br>
+							<br>실례지만 내게 뭐가 묻은 <span class="text-danger korea-font-bold support" data-translate="勾泥" data-origin="거니">거니</span>
+							<br>니 눈빛에 내가 헷갈리잖니
+							<br><span class="text-danger korea-font-bold support" data-translate="Mamamoo Mamamoo 夠gi Mr.A咩謀歐" data-origin="Mamamoo Mamamoo 거기 Mr.애매모호">Mamamoo Mamamoo 거기 Mr.애매모호</span>
+							<br>쳐다만 보지 말고 좀 더 다가<span class="text-danger korea-font-bold support" data-translate="瓦吧" data-origin="와 봐">와 봐</span>
+							<br>
+							<br>쉿!! 지금 저한테 관심 있으세요?
+							<br>
+							<br>There is a boy hello Mr.애매모호 <span class="text-danger korea-font-bold support" data-translate="(A咩謀歐)" data-origin="(애매모호)">(애매모호)</span>
+							<br>니 덫에 걸린 난 애정결핍 여우
+							<br><span class="text-danger korea-font-bold support" data-translate="Mamamoo Mamamoo 夠gi Mr.A咩謀歐" data-origin="Mamamoo Mamamoo 거기 Mr.애매모호">Mamamoo Mamamoo 거기 Mr.애매모호</span>
+							<br>찔러보지만 말고 저질러봐
+							<br>now! 신사숙녀 여러분
+							<br>let's get on with the show
+							<br>Show Show Show Show Show
+							<br>
+							<br>Darling is you <span class="text-danger korea-font-bold support">(you)</span> woo <span class="text-danger korea-font-bold support">(woo)</span>
+							<br>아직 넌 왜 눈치를 못 챘니 넌
+							<br>Mr.<span class="text-danger korea-font-bold support" data-translate=" A咩謀歐" data-origin="애매모호">애매모호</span> 날 헷갈리게 하지 마
+							<br>(ooh ooh ooh ooh ooh ooh ooh)
+							<br><span class="text-danger korea-font-bold support" data-translate="(Mamamoo Mr.A 咩 謀 歐)" data-origin="(Mamamoo Mr.애 매 모 호)">(Mamamoo Mr.애 매 모 호)</span>
+							<br>
+							<br>My love is for you <span class="text-danger korea-font-bold support">(you)</span> woo <span class="text-danger korea-font-bold support">(woo)</span> come on
+							<br>왜 자꾸 내 맘을 몰라주는 거니 왜
+							<br>oh Mr.<span class="text-danger korea-font-bold support" data-translate=" A咩謀歐" data-origin="애매모호">애매모호</span> 날 갖고 놀려 하지 마
+							<br>shoot shoot shoot shoot shoot
+							<br>shoot shoot shoot <span class="text-danger korea-font-bold support">hey Mr.</span>
+							<br>꼭 꼭 숨어 머리카락 보일라
+							<br><span class="text-danger korea-font-bold support" data-translate="(莎朗嘿唷 Mamamoo 媽 媽 木)" data-origin="(사랑해요 Mamamoo MA MA MOO)">(사랑해요 Mamamoo MA MA MOO)</span>
+							<br>
+							<br>캔디를 문 듯한 달콤한 <span class="text-danger korea-font-bold support" data-translate="買吐" data-origin="말투">말투</span>
+							<br>양의 탈을 쓴 넌 꼬리치는 늑대
+							<br><span class="text-danger korea-font-bold support">Mamamoo Mamamoo 거기 Mr.애매모호</span>
+							<br>내숭떨지 말고 나를 가져봐
+							<br>쉿! oh 신사숙녀 여러분
+							<br>let's get on with the show
+							<br>Show Show Show Show Show
+							<br>
+							<br>Darling is you <span class="text-danger korea-font-bold support">(you)</span> woo <span class="text-danger korea-font-bold support">(woo)</span>
+							<br>아직 넌 왜 눈치를 못 챘니 넌
+							<br>Mr.<span class="text-danger korea-font-bold support" data-translate=" A咩謀歐" data-origin="애매모호">애매모호</span> 날 헷갈리게 하지 마
+							<br>(ooh ooh ooh ooh ooh ooh ooh)
+							<br><span class="text-danger korea-font-bold support" data-translate="(Mamamoo Mr.A 咩 謀 歐)" data-origin="(Mamamoo Mr.애 매 모 호)">(Mamamoo Mr.애 매 모 호)</span>
+							<br>
+							<br>My love is for you <span class="text-danger korea-font-bold support">(you)</span> woo <span class="text-danger korea-font-bold support">(woo)</span> come on
+							<br>왜 자꾸 내 맘을 몰라주는 거니 왜
+							<br>oh Mr.<span class="text-danger korea-font-bold support" data-translate=" A咩謀歐" data-origin="애매모호">애매모호</span> 날 갖고 놀려 하지 마
+							<br>shoot shoot shoot shoot shoot
+							<br>shoot shoot shoot (hey Mr.)
+							<br>꼭 꼭 숨어 머리카락 보일라
+							<br><span class="text-danger korea-font-bold support" data-translate="(哈給黑唷 Mamamoo 班甲班甲)" data-origin="(함께해요 Mamamoo 반짝반짝)">(함께해요 Mamamoo 반짝반짝)</span>
+							<br>
+							<br><span class="text-danger korea-font-bold support">(MoonByul)</span>
+							<br>어서 말해봐 Mr. 애매모호
+							<br>왜 삐딱하게 구는 건데 마치 베레모
+							<br>사람 간보지 말고 빨리 와요 내게로
+							<br>사랑은 쟁취하는 거야 불러 봐요 세레모니
+							<br><span class="text-danger korea-font-bold support" data-translate="Mamamoo Mamamoo 夠gi Mr.A咩謀歐" data-origin="Mamamoo Mamamoo 거기 Mr.애매모호">Mamamoo Mamamoo 거기 Mr.애매모호</span>
+							<br>아마도 나 말고 딴 여자 있는 것 같다고 awwww!
+							<br>
+							<br>now! oh 신사숙녀 여러분
+							<br>let's get on with the show
+							<br>Show Show Show Show Show!
+							<br>
+							<br>Darling is you woo (you yeah ho!)
+							<br>아직 넌 왜 눈치를 못 챘니 넌 (눈치를 못 챘니 넌 yeah)
+							<br>Mr.<span class="text-danger korea-font-bold support" data-translate=" A咩謀歐" data-origin="애매모호">애매모호</span> 날 헷갈리게 하지 마 (here boy here boy)
+							<br>ooh ooh ooh ooh ooh ooh ooh
+							<br>(ooh yeaaaaaah)
+							<br>
+							<br>My love is for you <span class="text-danger korea-font-bold support">(you)</span> woo <span class="text-danger korea-font-bold support">(woo)</span> (only for you)
+							<br>왜 자꾸 내 맘을 몰라주는 거니 왜 <span class="text-danger korea-font-bold support">(Mamamoo)</span>
+							<br>oh Mr.<span class="text-danger korea-font-bold support" data-translate=" A咩謀歐" data-origin="애매모호">애매모호</span> 날 갖고 놀려 하지 마
+							<br>shoot shoot shoot shoot
+							<br>shoot shoot shoot shoot
+							<br>괜찮다면 박수 한 번 쳐 주세요
+							<br><span class="text-danger korea-font-bold support">(Hwasa MoonByul WheeIn Solar)</span>
+							<br><span class="text-danger korea-font-bold support" data-translate="(ㄊㄟ班那拉 Mamamoo)" data-origin="(대박나라 Mamamoo)">(대박나라 Mamamoo)</span>
+							<br>hey Mr.
+						</p>
+						<div class="card mb-3">
+							<div class="card-body">
+								<p class="card-text"><small class="text-muted">Lyric fr. http://www.bugs.co.kr/</small></p>
+								<p class="card-text"><small class="text-muted">Video fr. Taiwan MooMoo Union MAMAMOO</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header song_title" role="tab" id="headingFive">
+					<h5 class="mb-0">
+						<a class="collapsed" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+							<input type="hidden" value="https://www.youtube.com/embed/r4mezJEq3RI?rel=0">
+							음오아예
+						</a>
+						Um Oh Ah Yeh
+					</h5>
+				</div>
+				<div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion">
+					<div class="card-body">
+						<div class="col-sm-6 embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
+						</div>
+						<p class="text-left korea-font-regular">
+							<br>음 <span class="text-danger korea-font-bold support">(WheeIn)</span>
+							<br>오 <span class="text-danger korea-font-bold support">(Solar)</span>
+							<br>아 <span class="text-danger korea-font-bold support">(MoonByul)</span>
+							<br>예 <span class="text-danger korea-font-bold support">(Hwasa)</span>
+							<br><span class="text-danger korea-font-bold support">oh yes</span> 음 오 아 예 <span class="text-danger korea-font-bold support" data-translate="(耶)" data-origin="(예)">(예)</span>
+							<br>너에게 빠져들겠어 자꾸 반응하잖아
+							<br><span class="text-danger korea-font-bold support">oh yes</span> 음 오 아 예 <span class="text-danger korea-font-bold support" data-translate="(耶)" data-origin="(예)">(예)</span>
+							<br>그래 난 다가가겠어 넌 내 취향저격 <span class="text-danger korea-font-bold support">Ace</span>
+							<br>
+							<br>내 앞을 지나갔어 눈빛이 마주쳤어
+							<br>스타일이 좋아 느낌이 좋아 <span class="text-danger korea-font-bold support">(Mamamoo)</span>
+							<br>
+							<br>다를 게 없는 오늘 너 때문에 달아오른
+							<br>오늘이 좋아 음오아예
+							<br>
+							<br><span class="text-danger korea-font-bold support" data-translate="秋蹦幾plan" data-origin="첫 번째 플랜">첫 번째 플랜</span>
+							<br>감탄사 그 동안에
+							<br>찾아 헤맨 남자
+							<br>음오아예스
+							<br>맞는 옷처럼 잘 어울리는 <span class="text-danger korea-font-bold support" data-translate="ㄋㄡˊ呀" data-origin="너야">너야</span>
+							<br>
+							<br>부드럽게 이런 말 어떤 것 같아?
+							<br>
+							<br>음 두 번째 플랜 먼저 당기기
+							<br>오오 동공 떨리는 초침 스탠바이 큐
+							<br>아 시간되면 차 한잔 할래요?
+							<br>예스 이런 건 어떤 것 같아?
+							<br>
+							<br><span class="text-danger korea-font-bold support">oh yes</span> 음 오 아 예 <span class="text-danger korea-font-bold support" data-translate="(耶)" data-origin="(예)">(예)</span>
+							<br>너에게 빠져들겠어 자꾸 반응하잖아
+							<br><span class="text-danger korea-font-bold support">oh yes</span> 음 오 아 예 <span class="text-danger korea-font-bold support" data-translate="(耶)" data-origin="(예)">(예)</span>
+							<br>그래 난 다가가겠어 넌 내 취향저격 <span class="text-danger korea-font-bold support">Ace</span>
+							<br>
+							<br>본능을 따르겠어 날 감추지 않겠어
+							<br>오늘은 달라 먼저 다가가
+							<br>걸음은 도도하게 말투는 애교 있게
+							<br>날 보는 눈빛 <span class="text-danger korea-font-bold support" data-translate="恩喔哎耶" data-origin="음오아예">음오아예</span>
+							<br>
+							<br>help me
+							<br>시간 좀 되나요 나 좀 도와줘요
+							<br>그 쪽 때문에 내 오감이 제멋대로예요
+							<br>그 쪽이 예고 없이 날리는 미소에 음
+							<br>콜린퍼스도 울고 갈 당신의 매너에 오
+							<br>
+							<br>여자라 해도 믿을만한 피부 아예
+							<br>넌 존재자체 감탄사 절로 나네
+							<br><span class="text-danger korea-font-bold support" data-translate="恩喔哎耶" data-origin="음오아예">음오아예</span>
+							<br>나도 모르게
+							<br>달아오르네
+							<br>Holy Shh
+							<br>
+							<br><span class="text-danger korea-font-bold support">oh yes</span> 음 오 아 예 <span class="text-danger korea-font-bold support" data-translate="(耶)" data-origin="(예)">(예)</span>
+							<br>너에게 빠져들겠어 자꾸 반응하잖아
+							<br><span class="text-danger korea-font-bold support">oh yes</span> 음 오 아 예 <span class="text-danger korea-font-bold support" data-translate="(耶)" data-origin="(예)">(예)</span>
+							<br>그래 난 다가가겠어 넌 내 취향저격 <span class="text-danger korea-font-bold support">Ace</span>
+							<br>
+							<br>목소리도 <span class="text-danger korea-font-bold support">oh yes</span>
+							<br>눈웃음도 <span class="text-danger korea-font-bold support">oh yes</span>
+							<br>네 모든 게
+							<br>머리부터 발끝까지 다 <span class="text-danger korea-font-bold support">oh yes</span>
+							<br>
+							<br>지금 널 보면 난 <span class="text-danger korea-font-bold support">oh yes</span>
+							<br>널 보면 난 <span class="text-danger korea-font-bold support">oh yes</span>
+							<br>단 둘이서 <span class="text-danger korea-font-bold support">oh yes</span>
+							<br>드루루 드루루 드루루 <span class="text-danger korea-font-bold support">oh yes</span>
+							<br>
+							<br>뜨거워지는 이 분위기 너와 나의 거리
+							<br>
+							<br>우리 사이로 한 여자가 걸어 와 때마침
+							<br>
+							<br>그의 여자친구인 건지 아님 친군 건지 다가와
+							<br>
+							<br>"언니 이 여자 누구예요?”
+							<br>"여자였어?" <span class="text-danger korea-font-bold support">OH MY GOD!</span>
+							<br>
+							<br>oh yes 음 오 아 예 <span class="text-danger korea-font-bold support" data-translate="(耶)" data-origin="(예)">(예)</span>
+							<br>너에게 빠져들겠어 자꾸 반응하잖아
+							<br><span class="text-danger korea-font-bold support">oh yes</span> 음 오 아 예 <span class="text-danger korea-font-bold support" data-translate="(耶)" data-origin="(예)">(예)</span>
+							<br>그래 난 다가가겠어 넌 내 취향저격 <span class="text-danger korea-font-bold support">Ace</span>
+							<br>
+							<br>목소리도 <span class="text-danger korea-font-bold support">oh yes</span>
+							<br>눈웃음도 <span class="text-danger korea-font-bold support">oh yes</span>
+							<br>Oh! 너의 모든 게
+							<br>머리부터 발끝까지 다 <span class="text-danger korea-font-bold support">oh yes</span>
+						</p>
+						<div class="card mb-3">
+							<div class="card-body">
+								<p class="card-text"><small class="text-muted">Lyric fr. http://www.bugs.co.kr/</small></p>
+								<p class="card-text"><small class="text-muted">Video fr. Taiwan MooMoo Union MAMAMOO</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header song_title" role="tab" id="headingSix">
+					<h5 class="mb-0">
+						<a class="collapsed" data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+							<input type="hidden" value="https://www.youtube.com/embed/mUihQbEkYFI?rel=0">
+							데칼코마니
+						</a>
+						Décalcomanie
+					</h5>
+				</div>
+				<div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion">
+					<div class="card-body">
+						<div class="col-sm-6 embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
+						</div>
+						<p class="text-left korea-font-regular">
+							<br>Knock Knock 낯선 너의 등장이 <span class="text-danger korea-font-bold support">(Mamamoo)</span>
+							<br>평소답지 않은 눈빛이 <span class="text-danger korea-font-bold support" data-translate="(安惠真)" data-origin="(안혜진)">(안혜진)</span>
+							<br>뭔가 느낌이 좀 수상해
+							<br>지금은 12시10분전
+							<br>
+							<br>점점 분위기에 취하고 <span class="text-danger korea-font-bold support">(Mamamoo)</span>
+							<br>눈빛은 서로를 비추고 <span class="text-danger korea-font-bold support" data-translate="(金容仙)" data-origin="(김용선)">(김용선)</span>
+							<br>흐르는 침묵도 끈적해
+							<br>터질 것만 같은 우리 사이
+							<br>
+							<br>너와나 입을 <span class="text-danger korea-font-bold support" data-translate="媽秋 I feel good" data-origin="맞춰 I feel good">맞춰 I feel good</span>
+							<br>너에게 나를 <span class="text-danger korea-font-bold support" data-translate="媽ㄍㄧㄡˇ I feel good" data-origin="맡겨 I feel good">맡겨 I feel good</span>
+							<br>이건 좀 위험해 위험해 위험해 나
+							<br>선을 넘을 것만 같아
+							<br>
+							<br>너와나 같이 <span class="text-danger korea-font-bold support" data-translate="哭里 I feel good" data-origin="그린 I feel good">그린 I feel good</span>
+							<br>오렌지 빛깔 <span class="text-danger korea-font-bold support" data-translate="哭里 I feel good" data-origin="그린 I feel good">그림 I feel good</span>
+							<br>조금은 위험해 위험해 위험해도
+							<br>멈출 수가 없어 나
+							<br>I feel good
+							<br>
+							<br>Knock Knock 그때 예상했었지 <span class="text-danger korea-font-bold support">(Mamamoo)</span>
+							<br>여잔 촉이 정말 빠르지 <span class="text-danger korea-font-bold support" data-translate="(丁輝人)" data-origin="(정휘인)">(정휘인)</span>
+							<br>이미 물은 엎질러졌어
+							<br>우린 몰래 새벽을<span class="text-danger korea-font-bold support" data-translate="(文)" data-origin="(문)">(문)</span>맞<span class="text-danger korea-font-bold support" data-translate="(星)" data-origin="(별)">(별)</span>네 <span class="text-danger korea-font-bold support" data-translate="(伊)" data-origin="(이)">(이)</span>
+							<br>
+							<br>At that time
+							<br>Knock Knock 지난 여름부터 밤낮
+							<br>사춘기 소녀처럼 꿈꾸게 만들었어 로맨스
+							<br>오늘만 기다렸어 <span class="text-danger korea-font-bold support">Oh Yes</span>
+							<br>Oh 핸드폰은 Off 치명적인 호흡
+							<br>비밀스런 <span class="text-danger korea-font-bold support" data-translate="趴踢" data-origin="파티">파티</span> 깔아 레드 카펫
+							<br>내 공간에 와준 널 환영해 <span class="text-danger korea-font-bold support">Knock Knock Knock Knock</span>
+							<br>두 손을 머리위로 Clap your hands
+							<br>
+							<br>너와나 입을 <span class="text-danger korea-font-bold support" data-translate="媽秋 I feel good" data-origin="맞춰 I feel good">맞춰 I feel good</span>
+							<br>너에게 나를 <span class="text-danger korea-font-bold support" data-translate="媽ㄍㄧㄡˇ I feel good" data-origin="맡겨 I feel good">맡겨 I feel good</span>
+							<br>이건 좀 위험해 위험해 위험해 나
+							<br>선을 넘을 것만 같아
+							<br>
+							<br>너와나 같이 <span class="text-danger korea-font-bold support" data-translate="哭里 I feel good" data-origin="그린 I feel good">그린 I feel good</span>
+							<br>오렌지 빛깔 <span class="text-danger korea-font-bold support" data-translate="哭里 I feel good" data-origin="그린 I feel good">그림 I feel good</span>
+							<br>조금은 위험해 위험해 위험해도
+							<br>멈출 수가 없어 나
+							<br>I feel good
+							<br>
+							<br>나를 깨우는 너의 속삭임 (I feel good)
+							<br>너의 손짓 또 몸짓 (I feel good)
+							<br>너와 단둘이 맞은 아침이 (I feel good)
+							<br>I feel good good good good
+							<br>
+							<br>헝클어진 머리 헐크 같은 바디
+							<br>라인 보고 싶어 백허그까지 너 uh
+							<br>고개를 끄덕 끄덕 숨 쉴 수가 없네
+							<br>I can't control my self 준비했어 널 위해
+							<br><span class="text-danger korea-font-bold support">MAMAMOO is coming back for you</span>
+							<br>Knock Knock Knock Knock
+							<br>두 손을 머리위로 Clap your hands
+							<br>
+							<br>너와나 입을 <span class="text-danger korea-font-bold support" data-translate="媽秋 I feel good" data-origin="맞춰 I feel good">맞춰 I feel good</span>
+							<br>너에게 나를 <span class="text-danger korea-font-bold support" data-translate="媽ㄍㄧㄡˇ I feel good" data-origin="맡겨 I feel good">맡겨 I feel good</span>
+							<br>이건 좀 위험해 위험해 위험해 나
+							<br>선을 넘을 것만 같아
+							<br>
+							<br>너와나 같이 <span class="text-danger korea-font-bold support" data-translate="哭里 I feel good" data-origin="그린 I feel good">그린 I feel good</span>
+							<br>오렌지 빛깔 <span class="text-danger korea-font-bold support" data-translate="哭里 I feel good" data-origin="그린 I feel good">그림 I feel good</span>
+							<br>서로가 만들어 낸 서로가 묻혀진
+							<br>데칼코마니 같아 I feel good
+							<br>I feel good good good good
+						</p>
+
+						<div class="card mb-3">
+							<div class="card-body">
+								<p class="card-text"><small class="text-muted">Lyric fr. http://www.bugs.co.kr/</small></p>
+								<p class="card-text"><small class="text-muted">Video fr. 서로 배려하는 마마무 YouTube</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header song_title" role="tab" id="headingSeven">
+					<h5 class="mb-0">
+						<a class="collapsed" data-toggle="collapse" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+							<input type="hidden" value="https://www.youtube.com/embed/xyOc0NlqUis?rel=0">
+							넌 is 뭔들
+						</a>
+						You're the best
+					</h5>
+				</div>
+				<div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven" data-parent="#accordion">
+					<div class="card-body">
+						<div class="col-sm-6 embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
+						</div>
+						<p class="text-left korea-font-regular">
+							<br>Come on Hey Mommy
+							<br>Come on Hey Daddy
+							<br>이리와서 얘들 좀 봐 <span class="text-danger korea-font-bold support" data-translate="(金容仙)" data-origin="(김용선)">(김용선)</span>
+							<br>
+							<br>Come on Hey Sister
+							<br>Come on Hey Brother
+							<br>누가 얘들 좀 말려줘 <span class="text-danger korea-font-bold support" data-translate="(文星伊)" data-origin="(문별이)">(문별이)</span>
+							<br>
+							<br>귀여운 척 섹시한 척 이쁜 척 그런 거 안해도
+							<br>날 알아보는 너 <span class="text-danger korea-font-bold support" data-translate="(丁輝人)" data-origin="(정휘인)">(정휘인)</span>
+							<br>
+							<br>센스매너 말투표정 행동 하나까지 섬세한
+							<br>널 알아보는 나 <span class="text-danger korea-font-bold support" data-translate="(安惠真)" data-origin="(안혜진)">(안혜진)</span>
+							<br>
+							<br>우리 둘 사이 딱 한 뼘 사이
+							<br>매일 아침 난 너의 목소리로 눈을 뜨고
+							<br>우리 둘 사이 딱 맞는 타입 <span class="text-danger korea-font-bold support">(Mamamoo)</span>
+							<br>
+							<br>Come on 거기 미스터 <span class="text-danger korea-font-bold support" data-translate="(歐伊)" data-origin="(어이)">(어이)</span>
+							<br>Come on 이리와 바 <span class="text-danger korea-font-bold support" data-translate="(歐伊)" data-origin="(어이)">(어이)</span>
+							<br>천천히 아주 조금씩 <span class="text-danger korea-font-bold support">(Mamamoo)</span>
+							<br>
+							<br>Hey 거기 미소가 예쁜 남자 바로 너
+							<br><span class="text-danger korea-font-bold support" data-translate="ㄋㄡ 歐歐歐 啊啊啊啊" data-origin="너어어어 아아아아">너어어어 아아아아</span>
+							<br>날 미치게 하는 그런 남자
+							<br>몸매도 얼굴도 <span class="text-danger korea-font-bold support" data-translate="西搜嘎踏" data-origin="시선강탈">시선강탈</span>
+							<br>
+							<br>Hey Mr. 생각이 멋진 남자 바로 너
+							<br><span class="text-danger korea-font-bold support" data-translate="ㄋㄡ 歐歐歐 啊啊啊啊" data-origin="너어어어 아아아아">너어어어 아아아아</span>
+							<br>나 지금 너 땜에 혼란스러
+							<br>제발 누가 나 좀 말려줘 <span class="text-danger korea-font-bold support">(Mamamoo)</span>
+							<br>
+							<br>월화수목금토일 난 매일매일 너를 생각해
+							<br>넌 나를 생각해? Word up <span class="text-danger korea-font-bold support">Moon star</span>
+							<br>
+							<br>A형 B형 AB, O형 플러스 마이너스 상관없어
+							<br>S극과 N극처럼 어떤 공식이든 끌려 단지 그냥 너라서
+							<br>
+							<br>우리 둘 사이 딱 한 뼘 사이
+							<br>매일 밤마다 너의 자장가로 잠이 들고
+							<br>우리 둘 사이 딱 맞는 타입 <span class="text-danger korea-font-bold support">(Mamamoo)</span>
+							<br>
+							<br>Come on 거기 미스터 <span class="text-danger korea-font-bold support" data-translate="(歐伊)" data-origin="(어이)">(어이)</span>
+							<br>Come on 이리와 바 <span class="text-danger korea-font-bold support" data-translate="(歐伊)" data-origin="(어이)">(어이)</span>
+							<br>조용히 속삭여줄래 <span class="text-danger korea-font-bold support">(Mamamoo)</span>
+							<br>
+							<br>Hey 거기 미소가 예쁜 남자 바로 너
+							<br><span class="text-danger korea-font-bold support" data-translate="ㄋㄡ 歐歐歐 啊啊啊啊" data-origin="너어어어 아아아아">너어어어 아아아아</span>
+							<br>날 미치게 하는 그런 남자
+							<br>몸매도 얼굴도 <span class="text-danger korea-font-bold support" data-translate="西搜嘎踏" data-origin="시선강탈">시선강탈</span>
+							<br>
+							<br>Hey Mr. 생각이 멋진 남자 바로 너
+							<br><span class="text-danger korea-font-bold support" data-translate="ㄋㄡ 歐歐歐 啊啊啊啊" data-origin="너어어어 아아아아">너어어어 아아아아</span>
+							<br>나 지금 너 땜에 혼란스러
+							<br>제발 누가 나 좀 말려줘
+							<br>
+							<br>I like eye contact
+							<br>입술을 꽉 깨물어 (Your Lips)
+							<br>너의 두 눈이 스칠 때면 (Two Eyes)
+							<br>숨막히는 이끌림이 날 어지럽게 해
+							<br>나 너만의 영원한 <span class="text-danger korea-font-bold support" data-translate="搜妞 配" data-origin="소녀 팬">소녀 팬</span>
+							<br>
+							<br>is 뭔들 모든 게 넌 is 뭔들 완벽해
+							<br>
+							<br>That's right <span class="text-danger korea-font-bold support">(That's right)</span> 우리 사이
+							<br>자꾸 떠오르네 문득 너라면 난 is 뭔들
+							<br>
+							<br>24시간 1분 1초가
+							<br>조마조마해 조금이라도 널 놓칠까 봐
+							<br>24시간 지금 이순간
+							<br>
+							<br>Come on 나를 봐봐 <span class="text-danger korea-font-bold support" data-translate="(歐伊)" data-origin="(어이)">(어이)</span>
+							<br>Come on 넌 is 뭔들 <span class="text-danger korea-font-bold support" data-translate="(歐伊)" data-origin="(어이)">(어이)</span>
+							<br>이젠 우릴 말리지마 Hey Hey Hey Yeah
+							<br>
+							<br>Hey 거기 미소가 예쁜 남자 바로 너
+							<br><span class="text-danger korea-font-bold support" data-translate="ㄋㄡ 歐歐歐 啊啊啊啊" data-origin="너어어어 아아아아">너어어어 아아아아</span>
+							<br>날 미치게 하는 그런 남자
+							<br>몸매도 얼굴도 <span class="text-danger korea-font-bold support" data-translate="西搜嘎踏" data-origin="시선강탈">시선강탈</span>
+							<br>
+							<br><span class="text-danger korea-font-bold support" data-translate="Hey Mr. A咩謀歐 piano man" data-origin="Hey Mr. 애매모호 피아노 맨" >Hey Mr. 애매모호 피아노 맨</span> 바로 너
+							<br><span class="text-danger korea-font-bold support" data-translate="ㄋㄡ 歐歐歐 啊啊啊啊" data-origin="너어어어 아아아아">너어어어 아아아아</span>
+							<br>나 지금 너 땜에 혼란스러
+							<br>제발 누가 나 좀 말려줘
+							<br>
+							<br>Come on 넌 is 뭔들
+						</p>
+						<div class="card mb-3">
+							<div class="card-body">
+								<p class="card-text"><small class="text-muted">Lyric fr. http://www.bugs.co.kr/</small></p>
+								<p class="card-text"><small class="text-muted">Video fr. 서로 배려하는 마마무 YouTube</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header song_title" role="tab" id="headingEight">
+					<h5 class="mb-0">
+						<a class="collapsed" data-toggle="collapse" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+							<input type="hidden" value="https://www.youtube.com/embed/5N022i3GGrU?rel=0">
+							New York
+						</a>
+					</h5>
+				</div>
+				<div id="collapseEight" class="collapse" role="tabpanel" aria-labelledby="headingEight" data-parent="#accordion">
+					<div class="card-body">
+						<div class="col-sm-6 embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
+						</div>
+
+						<p class="text-left korea-font-regular">
+							<br>Let's get it
+							<br>이 밤 잠들 수 없는 이유 있어
+							<br>별빛도 잠든 지금 <span class="text-danger korea-font-bold support">Hello</span>
+							<br>남들과 다른 시간대 산다면
+							<br><span class="text-danger korea-font-bold support">Let's hang out</span> Make it loud
+							<br>
+							<br>시간 낭비야 그저 그런 고민
+							<br>24/7 벨트 매 Grab me
+							<br>내 맘대로 할거야
+							<br>나만 믿고 따라와
+							<br>Are you ready to fly?
+							<br>
+							<br>What’s up New York <span class="text-danger korea-font-bold support">New York</span>
+							<br>상상해 <span class="text-danger korea-font-bold support">Hands up</span>
+							<br>오늘 밤 Broadway에서 한잔해
+							<br>
+							<br>Hash tags New York <span class="text-danger korea-font-bold support">New York</span>
+							<br>자랑해 <span class="text-danger korea-font-bold support">Hands up</span>
+							<br>해 뜨기 전까지 전화 해도 돼
+							<br>
+							<br>늦었지만 Run for you
+							<br>멈추지마 What you do (oh baby)
+							<br>
+							<br>두 눈을 뗄 수 없는 이유 있어
+							<br>달빛도 가까워져 <span class="text-danger korea-font-bold support">Hello</span>
+							<br>센치한 감정소모 필요 없어
+							<br>Hey spin up (Think about you)
+							<br>
+							<br>Just try raise the engine
+							<br>젊음의 패기 올라타 비행기
+							<br>하고 싶은 대로 해 넌 이미 베테랑
+							<br>24? Day & Night
+							<br>
+							<br>What’s up New York <span class="text-danger korea-font-bold support">New York</span>
+							<br>상상해 <span class="text-danger korea-font-bold support">Hands up</span>
+							<br>오늘 밤 Broadway에서 한잔해
+							<br>
+							<br>Hash tags New York <span class="text-danger korea-font-bold support">New York</span>
+							<br>자랑해 <span class="text-danger korea-font-bold support">Hands up</span>
+							<br>해 뜨기 전까지 전화 해도 돼
+							<br>
+							<br>늦었지만 Run for you
+							<br>멈추지마 What you do (oh baby)
+							<br>
+							<br>(Day and Night)
+							<br>거짓말 같은 이야기 반은 Nothing
+							<br>졸린 눈을 뜨고
+							<br>(Day and Night)
+							<br>짧은 밤 긴 하루도 이제 끝나가지만
+							<br>아직도 난 목말라
+							<br>
+							<br>Ready Action 모두 잠든 새벽
+							<br>난 이 도시의 Actor
+							<br>Making the film as ever
+							<br>탁 트이네 숨통 환상을 맛본 후 중독돼
+							<br>어서 소리쳐 Awesome
+							<br>
+							<br>What’s up New York <span class="text-danger korea-font-bold support">New York</span>
+							<br>상상해 <span class="text-danger korea-font-bold support">Hands up</span>
+							<br>오늘 밤 Broadway에서 한잔해
+							<br>
+							<br>솔직히 가고 싶어 뉴욕
+							<br>Hash tags New York <span class="text-danger korea-font-bold support">New York</span>
+							<br>자랑해 태그해 태그해
+							<br>해 뜨기 전까지 전화 해도 돼
+							<br>
+							<br>늦었지만 Run for you
+							<br>멈추지마 What you do (oh baby)
+						</p>
+
+						<div class="card mb-3">
+							<div class="card-body">
+								<p class="card-text"><small class="text-muted">Lyric fr. http://www.bugs.co.kr/</small></p>
+								<p class="card-text"><small class="text-muted">Video fr. Taiwan MooMoo Union MAMAMOO</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header song_title" role="tab" id="headingNine">
+					<h5 class="mb-0">
+						<a class="collapsed" data-toggle="collapse" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+							Love Lane
+							<input type="hidden" value="https://www.youtube.com/embed/RI3h3RNy_KQ?rel=0">
+						</a>
+					</h5>
+				</div>
+				<div id="collapseNine" class="collapse" role="tabpanel" aria-labelledby="headingNine" data-parent="#accordion">
+					<div class="card-body">
+						<div class="col-sm-6 embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
+						</div>
+						<p class="text-left korea-font-regular">
+							<br>여전히 알듯말듯 귀에 맴도는 말투
+							<br>얼굴을 <span class="text-danger korea-font-bold support" data-translate="不ki勾" data-origin="붉히고">붉히고</span> 가슴이 들떠오죠
+							<br>
+							<br>네모난 버스안에
+							<br>작게 들려오는 흔한 노래에
+							<br>어느샌가 falling into you
+							<br>
+							<br>무슨고민해 <span class="text-danger korea-font-bold support" data-translate="(丁輝人)" data-origin="(정휘인)">(정휘인)</span>
+							<br>우리 이제 같이 걸을래 boy
+							<br>
+							<br>그대는 알면서도 모를까 I fall in love
+							<br>지금 타고 갈까
+							<br>subway or walking in the rain <span class="text-danger korea-font-bold support" data-translate="(巴!)" data-origin="(빰)">(빰)</span>
+							<br>
+							<br>저 구름 사이로 미끌어지듯 나른하게
+							<br>우리는 이미 걷고 있죠
+							<br>
+							<br>뚜 뚜루 뚜루루뚜 뚜루루 뚜 뚜루 루
+							<br>walking in that lane
+							<br>뚜 뚜루 뚜<span class="text-danger korea-font-bold support" data-translate="(文星伊)" data-origin="(문별이)">(문별이)</span>루루뚜 뚜루루 뚜 뚜루 루
+							<br>walking in that lane
+							<br>
+							<br><span class="text-danger korea-font-bold support">(one two three GO!)</span>
+							<br>맘은 상큼한 mint 기분좋게 흩날리는 향기에 <span class="text-danger korea-font-bold support" data-translate="(安惠真)" data-origin="(안혜진)">(안혜진)</span>
+							<br>나도 몰래 (falling into you)
+							<br>
+							<br>무슨 고민해 <span class="text-danger korea-font-bold support" data-translate="(金容仙)" data-origin="(김용선)">(김용선)</span> 우리 이제 같이 걸을래 (boy)
+							<br>
+							<br>그대는 알면서도 모를까 I fall in love
+							<br>지금 타고 갈까 subway
+							<br>or walking in the rain <span class="text-danger korea-font-bold support" data-translate="(巴!)" data-origin="(빰)">(빰)</span>
+							<br>
+							<br>저 구름 사이로 미끌어지듯 나른하게
+							<br>우리는 이미 걷고 있죠
+							<br>
+							<br>아무런 욕심 없었죠 <span class="text-danger korea-font-bold support">love lane</span>
+							<br>나 꿈을 꾸는 것도 아닌데 왜 이렇게 떨려
+							<br>
+							<br>그대는 알면서도 모를까 I fall in love
+							<br>지금 타고 갈까 subway
+							<br>or walking in the rain <span class="text-danger korea-font-bold support" data-translate="(巴!)" data-origin="(빰)">(빰)</span>
+							<br>
+							<br>저 구름사이로 미끌어지듯 나른하게
+							<br>우리는 이미 걷고있죠
+							<br>
+							<br><span class="text-danger korea-font-bold support" data-translate="嘟 嘟嚕 嘟嚕嚕嘟 嘟嚕嚕 嘟 嘟嚕 嚕" data-origin="뚜 뚜루 뚜루루뚜 뚜루루 뚜 뚜루 루">뚜 뚜루 뚜루루뚜 뚜루루 뚜 뚜루 루</span>
+							<br><span class="text-danger korea-font-bold support">walking in that lane</span>
+							<br><span class="text-danger korea-font-bold support" data-translate="嘟 嘟嚕 嘟嚕嚕嘟 嘟嚕嚕 嘟 嘟嚕 嚕" data-origin="뚜 뚜루 뚜루루뚜 뚜루루 뚜 뚜루 루">뚜 뚜루 뚜루루뚜 뚜루루 뚜 뚜루 루</span>
+							<br><span class="text-danger korea-font-bold support">walking in that lane</span>
+						</p>
+
+						<div class="card mb-3">
+							<div class="card-body">
+								<p class="card-text"><small class="text-muted">Lyric fr. http://www.bugs.co.kr/</small></p>
+								<p class="card-text"><small class="text-muted">Video fr. Taiwan MooMoo Union MAMAMOO</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header song_title" role="tab" id="headingTen">
+					<h5 class="mb-0">
+						<a class="collapsed" data-toggle="collapse" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+							Piano man
+							<input type="hidden" value="https://www.youtube.com/embed/pkfUaesBNCI?rel=0">
+						</a>
+					</h5>
+				</div>
+
+				<div id="collapseTen" class="collapse" role="tabpanel" aria-labelledby="headingTen" data-parent="#accordion">
+					<div class="card-body">
+						<div class="card-body">
+							<div class="col-sm-6 embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item" src="" allowfullscreen></iframe>
+							</div>
+							<p class="text-left korea-font-regular">
+								<br>I'm ready for some action
+								<br>Are you ready for perfection
+								<br>Hey piano man
+								<br>Hello um
+								<br><span class="text-danger korea-font-bold support">(Solar MoonByul WheeIn WhaSa MaMoo)</span>
+								<br>아니 매력 없는 대화들이 참 <span class="text-danger korea-font-bold support">(Solar)</span>
+								<br>센스 하나 없는 애들 참
+								<br>힘준 내 하이힐도 <span class="text-danger korea-font-bold support" data-translate="(歐)" data-origin="(오)">(오)</span> 공들인 립스틱도 <span class="text-danger korea-font-bold support" data-translate="(歐)" data-origin="(오)">(오)</span>
+								<br>못 알아보는 눈들이 참 따분해
+								<br>
+								<br>그 때쯤 니가 걸어 나온 것 같애 <span class="text-danger korea-font-bold support">(Whasa)</span>
+								<br>여기엔 어울리지 않는 피아노맨
+								<br>하얀 손가락 건반에 내릴 때
+								<br>눈을 반짝 뜬 것 같아
+								<br>
+								<br><span class="text-danger korea-font-bold support" data-translate="蹦芭芭拉 蹦芭芭拉 蹦芭芭拉 蹦" data-origin="붐빠빠라 붐빠빠라 붐빠빠라 붐">붐빠빠라 붐빠빠라 붐빠빠라 붐</span>
+								<br><span class="text-danger korea-font-bold support" data-translate="蹦芭芭拉 蹦芭芭拉 蹦芭芭拉 蹦" data-origin="붐빠빠라 붐빠빠라 붐빠빠라 붐">붐빠빠라 붐빠빠라 붐빠빠라 붐</span>
+								<br>
+								<br>Hey piano man <span class="text-danger korea-font-bold support">(Man)</span>
+								<br>춤을 추는 너의 손짓이
+								<br>The piano man <span class="text-danger korea-font-bold support">(Man)</span>
+								<br>뻔하지 않은 그 몸짓이
+								<br>나 뭐랄까, 지금 이 곳에서
+								<br>너랑 나랑 둘만
+								<br>남을래 이렇게
+								<br>
+								<br>오른쪽으로 오른쪽으로 오른쪽으로
+								<br>왼쪽으로 왼쪽으로 왼쪽으로
+								<br>yeah yeah yeah yeah yeah yeah yeah!
+								<br>손 끝이 건반들을 쓸어 내릴 때 <span class="text-danger korea-font-bold support">(WheeIn)</span>
+								<br>자꾸 나쁜 상상을 했던 것 같애
+								<br>가슴은 스타카토
+								<br>Hey Mr. <span class="text-danger korea-font-bold support">애매모호</span>
+								<br>내 온 몸은 피아노처럼
+								<br>
+								<br><span class="text-danger korea-font-bold support" data-translate="蹦芭芭拉 蹦芭芭拉 蹦芭芭拉 蹦" data-origin="붐빠빠라 붐빠빠라 붐빠빠라 붐">붐빠빠라 붐빠빠라 붐빠빠라 붐</span>
+								<br><span class="text-danger korea-font-bold support" data-translate="蹦芭芭拉 蹦芭芭拉 蹦芭芭拉 蹦" data-origin="붐빠빠라 붐빠빠라 붐빠빠라 붐">붐빠빠라 붐빠빠라 붐빠빠라 붐</span>
+								<br>
+								<br>Hey piano man <span class="text-danger korea-font-bold support">(Man)</span>
+								<br>춤을 추는 너의 손짓이
+								<br>The piano man <span class="text-danger korea-font-bold support">(Man)</span>
+								<br>뻔하지 않은 그 몸짓이
+								<br>나 뭐랄까 지금 이 곳에서
+								<br>너랑 나랑 둘만
+								<br>남을래 이렇게
+								<br>
+								<br>왼쪽으로 왼쪽으로 왼쪽으로
+								<br>오른쪽으로 모두 여기로
+								<br>
+								<br>Word up <span class="text-danger korea-font-bold support">Moon Star</span>
+								<br>시작은 <span class="text-danger korea-font-bold support" data-translate="禿隆配" data-origin="트럼펫">트럼펫</span>
+								<br>Can I <span class="text-danger korea-font-bold support">get that</span> (Here)
+								<br>사이사이 마다 곁들어진 <span class="text-danger korea-font-bold support" data-translate="Hot伊黑" data-origin="하이헷">하이헷</span>
+								<br>드링 드럼킥
+								<br>리듬이란 접시 위에다가
+								<br>달콤한 피아노를 끼얹지
+								<br><span class="text-danger korea-font-bold support" data-translate="阿伊A ㄎ拉歐的 洽gi搜給 哈ㄍㄧ " data-origin="아이 엠 그라운드 자기소개 하기">아이 엠 그라운드 자기소개 하기</span>
+								<br>치마보단 난 긴 청바지
+								<br>근데도 쟤들은 나 좋다고 다 난리
+								<br>
+								<br>Oh swing, Let’s groove, singing
+								<br>Oh swing, Let’s groove, my babe
+								<br>Oh swing, Let’s groove,
+								<br>
+								<br>소개합니다 (We are Mamamoo)
+								<br>Darling you are my own
+								<br>
+								<br>Hey piano man <span class="text-danger korea-font-bold support">(Man)</span>
+								<br>이 음악의 끝엔 내게로
+								<br>(oh 내게로 피아노맨)
+								<br>The piano man <span class="text-danger korea-font-bold support">(Man)</span>
+								<br>이미 할 얘긴 다 한 걸로
+								<br>니 마지막 남은 멜로디는
+								<br>너랑 나랑 둘만
+								<br>(너랑 나랑 둘만 그렇게!)
+								<br>그렇게 들을래
+								<br>내일도 모레도 계속 우리 만날래
+								<br>
+								<br>Ye ye ye ye ye ye ye!
+							</p>
+							<div class="card mb-3">
+								<div class="card-body">
+									<p class="card-text"><small class="text-muted">Lyric fr. http://www.bugs.co.kr/</small></p>
+									<p class="card-text"><small class="text-muted">Video fr. 서로 배려하는 마마무 YouTube</small></p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
+		<footer class="footer mt-3">
+			<!--<div class="card mb-3">-->
+				<!--<div class="card-body">-->
+					<!--<p class="card-text"><small class="text-muted">歌詞來源：http://www.bugs.co.kr/</small></p>-->
+					<!--<p class="card-text"><small class="text-muted">影片來源：Taiwan MooMoo Union MAMAMOO</small></p>-->
+					<!--<p class="card-text"><small class="text-muted">contact@moomoo-wonderland.com</small></p>-->
+					<!--window.open('mailto:test@example.com');-->
+				<!--</div>-->
+			<!--</div>-->
+			<footer class="blockquote-footer float-right">最近一次維護時間 2017/09/27 23:24:28</footer>
+		</footer>
 
 	</div>
 
@@ -238,7 +1167,46 @@
 	ga('create', 'UA-36798040-4', 'auto');
 	ga('send', 'pageview');
 
+	$(document).ready(function() {
+		$("#convert-korea-btn").hide();
 
+		$(".collapsed").on("click", function(){
+			var song_title = $(this);
+			if ($(this).closest(".card").find("iframe").attr("src") == "") {
+				var url = $(this).find("input[type='hidden']").val();
+				$(this).closest(".card").find("iframe").attr("src", url);
+			}
+			setTimeout(function() {
+				$('html, body').animate({
+					scrollTop: song_title.offset().top-30
+				}, 500);
+			}, 300);
+		});
+
+		$("#convert-ch-btn").on("click", function(){
+			$(this).hide();
+			$(".support").each(function(index, element){
+				//console.log($(element).data('translate'));
+				if ($(element).data('translate')) {
+					$(this).text($(element).data('translate'));
+				}
+			});
+
+			$("#convert-korea-btn").show();
+		});
+
+		$("#convert-korea-btn").on("click", function(){
+			$(this).hide();
+			$(".support").each(function(index, element){
+				//console.log($(element).data('translate'));
+				if ($(element).data('origin')) {
+					$(this).text($(element).data('origin'));
+				}
+			});
+
+			$("#convert-ch-btn").show();
+		});
+	});
 
 	function back2top() {
 		$('html,body').animate({scrollTop: 0});
