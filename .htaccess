@@ -1,0 +1,6 @@
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP_HOST} ^moomoo-wonderland.com$
+    RewriteRule ^$ http://www.moomoo-wonderland.com/index.php [L,R=301]
+</IfModule>
