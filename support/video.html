@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>影片搜尋工具</title>
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="robots" content="index"> 
+    <!-- 搜索引擎爬虫重访时间 -->
+    <!-- <meta name="revisit-after" content="7 days"> -->
+    <meta http-equiv="cache-control" content="no-cache">
+
+	<meta charset="UTF-8">
+
+	<meta property="og:url"           content="http://www.moomoo-wonderland.com/support/video.html" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="MAMAMOO 影片搜尋工具" />
+	<meta property="og:description"   content="" />
+	<!-- <meta property="og:image"         content="http://www.moomoo-wonderland.com/support_cover.jpg"/> -->
+	<meta name="keywords" 			  content="Mamamoo, 媽木, 마마무, 응원, 무무, 蘿蔔, 影片, 搜尋">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.1/vue.js"></script>
+
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <style>
+        /* .card-body > .link-text {
+            font-size: 12px;
+        }
+        .video-thumbnail {
+            height: 200px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        } */
+
+        /* .card-body .video-link:not(:first-child)::before {
+            content: '/'
+        } */
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo" aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">MooMoo Wonderland</a>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="support/songs.html">媽木應援歌詞</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="wheein/smile.html">輝人淨化搜索詞活動</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="support/mamavote.html">投票</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">新工具施工中...</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center" id="videoList">
+            <div class="col-md-4 col-sm-12 mt-3" v-for="video,key in videos"> 
+                <div class="card">
+                    <h4 class="card-header">${video.title}</h4>
+                    <img class="card-img-top" :src='video.image' :alt="video.title">
+                    <!-- <div class="card-body video-thumbnail" v-bind:style="{ 'background-image': 'url(' + video.image + ')'}"></div> -->
+                    <div class="card-body">
+                        <!-- <p class="link-text" v-for="link,key in video.links"> -->
+                            <a v-for="link,key in video.links" class="video-link card-link" :href='link.value'>${link.title}</a>
+                        <!-- </p> -->
+                    </div>
+                    <div class="card-footer text-muted"> 
+                        <span class="badge badge-warning mr-1" v-for="tag,key in video.tags">${tag}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+</body>
+</html>
+
+<script type="text/javascript">
+
+let videos = [
+    {
+        id: 1,
+        title: 'MBC Every1 Showtime EP1',
+        type: 'TV', //團綜、公演、電台、直播...
+        image: 'test.jpg', // 預覽圖
+        links: [
+            { title: 'B站', value: 'http://www.bilibili.com/video/av5256799/'},
+            { title: 'Youtube', value: 'https://www.youtube.com/watch?v=bXlrqQKbjSM' }
+        ],
+        year: '2016',
+        month: '7',
+        day: '7', //可為空
+        description: 'MAMAMOO x GFriend',
+        tags: ['MAMAMOO','GFriend','在車上唱歌','遊戲'], //array
+        isSeries: 1, // 是否為多集影片
+        relatedSeriesId: [3,4] //關聯的影片id
+    },
+    {
+        id: 2,
+        title: 'Amigo TV (1/7)',
+        type: 'TV', //團綜、公演、電台、直播...
+        image: 'test.jpg',
+        links: [
+            { title: 'B站', value: 'http://www.bilibili.com/video/av12440894/'},
+            { title: 'Youtube', value: 'https://www.youtube.com/watch?v=bXlrqQKbjSM' }
+        ],
+        year: '2017',
+        month: '3',
+        day: '28',
+        description: 'MAMAMOO @ Amigo TV',
+        tags: ['MAMAMOO','遊戲','便當','冰淇淋','年糕'],
+        isSeries: '', // 是否為多集影片
+        relatedSeriesId: [] //關聯的影片id
+    }
+];
+
+let videoList = new Vue({
+		el: '#videoList',
+		delimiters: ['${', '}'],
+		data: {
+			videos: videos
+		},
+		methods: {
+			
+		}
+	});
+</script>
